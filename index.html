@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon Finder</h1>
+        <div class="controls">
+            <select name="type" id="types">
+                <option value="grass">Grass</option>
+                <option value="bug">Bug</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="normal">Normal</option>
+                <option value="poison">Poison</option>
+            </select>
+            <button id="filter">Filter By Type</button>
+            <button id="reset"><a href="index.html">Refresh the page</a></button>
+        </div>
+        <input type="text" id="search" placeholder="Search Pokémon...">
+    </div>
+    <div id="pokemon_card_container"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

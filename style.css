@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Select & Input */
+select, input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#filter {
+    background-color: #144aad;
+    color: white;
+}
+
+#filter:hover {
+    background-color: #45a049;
+}
+
+#reset {
+    background-color: #FF9800 ;
+    color: white;
+}
+
+#reset a {
+    text-decoration: none;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #d32f2f;
+}
+
+/* Search Input */
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Pokémon Card Container */
+#pokemon_card_container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+/* Pokémon Card Styling */
+.pokemon_card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.pokemon_card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+/* Front */
+.card_front {
+    /* background: linear-gradient(to right, #4CAF50, #8BC34A); */
+    /* background: linear-gradient(to right, #000000, #333333); */
+    background-color: black;
+    color: white;
+}
+
+/* Back */
+.card_back {
+    background: linear-gradient(to right, #FF9800, #FF5722);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Pokémon Image */
+.img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Pokémon ID */
+.id {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Name & Type */
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.type {
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
